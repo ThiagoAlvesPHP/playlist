@@ -49,7 +49,7 @@ class Upload{
 
 			return $sql->fetch(PDO::FETCH_ASSOC);
 		} else {
-			$sql = $this->db->prepare("SELECT * FROM musicas ORDER BY dt_cadastro ASC LIMIT 1");
+			$sql = $this->db->prepare("SELECT * FROM musicas ORDER BY RAND() LIMIT 1");
 			$sql->execute();
 
 			return $sql->fetch(PDO::FETCH_ASSOC);

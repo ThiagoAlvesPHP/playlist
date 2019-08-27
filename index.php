@@ -68,7 +68,9 @@ if (isset($alert)) {
 	<hr>
 	<div class="row text-center">
 		
-		<audio id="music" src="arquivos/<?=$music['musica']; ?>" preload="auto" controls></audio>
+		<audio id="music" src="arquivos/<?=$music['musica']; ?>" controls="controls" autoplay="autoplay">
+		</audio>
+
 		<div id="descricao"><?=str_replace('.mp3', '', $music['descricao']); ?></div>
 
 		<hr>
