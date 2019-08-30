@@ -68,5 +68,5 @@ class Upload{
 
 		return $sql->fetch(PDO::FETCH_ASSOC);
 	}
-	
+
 }

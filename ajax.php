@@ -8,3 +8,9 @@ if (!empty($_POST['music'])) {
 	$music = $sql->getUploadUnique($id);
 	echo json_encode($music);
 }
+
+if (!empty($_POST['duracao'])) {
+
+	$music = $sql->getUploadUnique();
+	echo json_encode($music);
+}

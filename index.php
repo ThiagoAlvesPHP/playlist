@@ -1,5 +1,7 @@
 <?php
 require 'Upload.php';
+require 'duracao_musica/vendor/autoload.php';
+
 $sql = new Upload();
 //TODAS AS MÚSICAS
 $dados = $sql->getUpload();
